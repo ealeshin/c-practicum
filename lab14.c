@@ -64,7 +64,7 @@ void inputFromFile(int *array, int n) {
 
 // Сохранение массива в файл:
 void saveToFile(int *array, int n) {
-  FILE* f = fopen("output.txt", "w+");
+  FILE *f = fopen("output.txt", "w+");
   fprintf(f, "%d\n", n);
   for (int i = 0; i < n; i++) {
     fprintf(f, "%d\n", array[i]);
