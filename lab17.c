@@ -53,19 +53,19 @@ int main() {
   switch (method) {
     // Если выбран метод 1, вызывается функция заполнения массива с клавиатуры:
     case 1:
-      promptInput(array, n);
+      promptInput(array, rows, cols);
       break;
     // Если выбран метод 2, вызывается функция заполнения массива случайными числами:
     case 2:
-      randomInput(array, n);
+      randomInput(array, rows, cols);
       break;
     // Если выбран метод 3, вызывается функция заполнения массива из файла:
     case 3:
-      fileInput(array, n);
+      fileInput(array, rows, cols);
       break;
     // Если выбран метод 4, вызывается функция заполнения массива по формуле:
     case 4:
-      formulaInput(array, n);
+      formulaInput(array, rows, cols);
       break;
     default:
       printf("Введено недопустимое значение\n");
